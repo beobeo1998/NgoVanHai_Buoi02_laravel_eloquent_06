@@ -15,6 +15,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Title</th>
                 <th scope="col">Content</th>
+                <th scope="col">active</th>
                 <th scope="col">Created_at</th>
                 <th scope="col">Action</th>
             </tr>
@@ -30,6 +31,7 @@
                         <td>{{ $item->name }}</td>
                         <td>{{ $item->title }}</td>
                         <td>{{ $item->content }}</td>
+                        <td>{{ $item->active }}</td>
                         <td>{{ $item->created_at }}</td>
                         <td>
                             <a href="{{ route('post.edit',$item->id) }}" class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> Edit</a>
